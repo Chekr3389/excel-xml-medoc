@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>GitHub Copilot</Author>
+  <LastAuthor>GitHub Copilot</LastAuthor>
+  <Created>2026-06-04T00:00:00Z</Created>
+  <Company>M.E.Doc Converter</Company>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Default">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="Header">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="2" ss:Color="#000000"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#000000"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2" ss:Color="#000000"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Bold="1" ss:Color="#FFFFFF"/>
+   <Interior ss:Color="#4472C4" ss:Pattern="Solid"/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63" ss:Name="Input">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#D9D9D9"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#D9D9D9"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#D9D9D9"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#D9D9D9"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#F2F2F2" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s64" ss:Name="Required">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#D9D9D9"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#D9D9D9"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#D9D9D9"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1" ss:Color="#D9D9D9"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#FFF2CC" ss:Pattern="Solid"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Дані для конвертації">
+  <Table ss:ExpandedColumnCount="27" ss:ExpandedRowCount="22" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultStyleID="Default">
+   <Column ss:AutoFitWidth="0" ss:Width="40"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:AutoFitWidth="0" ss:Width="120"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:AutoFitWidth="0" ss:Width="120"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="100"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="80"/>
+   <Column ss:AutoFitWidth="0" ss:Width="150"/>
+
+   <Row ss:Height="30" ss:StyleID="s62">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">№ з/п</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Код операції</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Тип предмета*</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Опис предмета</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Код УКТ ЗЕД</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Код послуги</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Контракт/Договір*</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Код сторони*</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Код країни*</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Інкотермс</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Дата операції*</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Дата до</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Ціна/ум.*</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Кількість*</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Кількість контракт</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Код валюти*</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Курс валюти*</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Вартість (грн)*</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Код методу</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Показник</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Значення</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Сторона</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Код джерела</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Назва джерела</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Резерв 1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Резерв 2</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Примітки</Data></Cell>
+   </Row>
+
+   <Row ss:Height="25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">035</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">205</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Конвертація валюти</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">07.01.02</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">№РКО-1121688/23032022/0048</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">144</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">826</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">02</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2025-01-02</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">2025-01-02</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">689.89</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">2454 або 2009</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">840</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">41.97</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">28956.41</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">301</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">601</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Інформація про зіставні неконтрольовані операції</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Приклад заповнення</Data></Cell>
+   </Row>
+
+   <Row ss:Height="25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">035</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">205</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Конвертація валюти</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">07.01.02</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">№РКО-1121688/23032022/0048</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">144</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">826</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">02</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2025-01-02</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">2025-01-02</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">649</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">2454 або 2009</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">978</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">43.61</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">28299.77</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">301</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">601</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Інформація про зіставні неконтрольовані операції</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Приклад заповнення</Data></Cell>
+   </Row>
+
+   <Row ss:Height="25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+
+   <Row ss:Height="25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+
+   <Row ss:Height="25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+
+   <Row ss:Height="25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+
+   <Row ss:Height="25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+
+   <Row ss:Height="25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+
+   <Row ss:Height="25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+
+   <Row ss:Height="25">
+    <Cell ss:StyleID="s64"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String"></Data></Cell>
+   </Row>
+
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>7</ActiveCol>
+     <RangeSelection>A5:AA20</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+
+ <Worksheet ss:Name="Довідка - Коди">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="30" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultStyleID="Default">
+   <Column ss:Width="200"/>
+   <Column ss:Width="300"/>
+   <Column ss:Width="200"/>
+   <Column ss:Width="300"/>
+
+   <Row ss:Height="25" ss:StyleID="s62">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">КОДИ ОПЕРАЦІЙ</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Опис</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">КОДИ ВАЛЮТ</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Опис</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">035</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Послуги</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">840</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">USD (Доларі США)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">201</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Товари</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">978</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">EUR (Євро)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">202</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Права інтелектуальної власності</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">826</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">GBP (Фунти стерлінгів)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">203</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Гарантії</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">392</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">JPY (Єни)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">204</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Кредити</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">756</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">CHF (Швейцарський франк)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">205</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Конвертація валюти</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">208</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">DKK (Данські крони)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">206</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Страхування</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">380</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">EUR (Італія)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">207</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Доставка</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">643</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">RUB (Російські рублі)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">208</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Обслуговування</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">985</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">PLN (Польські злоті)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">209</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Інші</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">124</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">CAD (Канадські доларі)</Data></Cell>
+   </Row>
+
+   <Row ss:Height="20">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">КОДИ КРАЇН</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Опис</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">ІНКОТЕРМС</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Опис</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">826</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">США</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">02</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">CIF (Вартість, страхування, фрахт)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">144</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Туреччина</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">10</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">DAP (Доставлено на місце)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">040</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Австрія</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">13</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">DDP (Доставлено, мито оплачено)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">056</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Бельгія</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">04</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">FOB (Франко на борту)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">756</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Швейцарія</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">05</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">CFR (Вартість і фрахт)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">250</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Франція</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">01</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">EXW (Ex Works)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">276</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Німеччина</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">03</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">CPT (Фрахт оплачено до)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">372</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Ірландія</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">06</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">CIP (Фрахт і страхування оплачено)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">380</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Італія</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">07</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">FCA (Франко перевізнику)</Data></Cell>
+   </Row>
+
+   <Row>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">528</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Нідерланди</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">08</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">FAS (Франко вздовж борту)</Data></Cell>
+   </Row>
+
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>4</ActiveRow>
+     <ActiveCol>0</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+
+</Workbook>

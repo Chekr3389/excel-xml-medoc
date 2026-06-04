@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:annotation>
+		<xs:documentation>Інформація про пов'язаність осіб (Інформація до додатка до Звіту про контрольовані операції)
+		(у редакції наказу Міністерства фінансів України від 31 грудня 2020 року N 841)</xs:documentation>
+	</xs:annotation>
+	<xs:include schemaLocation="common_types.xsd"/>
+	<xs:element name="DECLAR" type="DeclarContent"/>
+	<xs:complexType name="DeclarContent">
+		<xs:sequence>
+			<xs:element name="DECLARHEAD" type="DHead"/>
+			<xs:element name="DECLARBODY" type="DBody">
+				<xs:unique name="UT1RXXXXG1S">
+					<xs:selector xpath="T1RXXXXG1S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT1RXXXXG2S">
+					<xs:selector xpath="T1RXXXXG2S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT1RXXXXG3S">
+					<xs:selector xpath="T1RXXXXG3S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT1RXXXXG4">
+					<xs:selector xpath="T1RXXXXG4"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT2RXXXXG1S">
+					<xs:selector xpath="T2RXXXXG1S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT2RXXXXG2S">
+					<xs:selector xpath="T2RXXXXG2S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT2RXXXXG3S">
+					<xs:selector xpath="T2RXXXXG3S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT2RXXXXG4">
+					<xs:selector xpath="T2RXXXXG4"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT2RXXXXG5S">
+					<xs:selector xpath="T2RXXXXG5S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT2RXXXXG6S">
+					<xs:selector xpath="T2RXXXXG6S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT2RXXXXG7S">
+					<xs:selector xpath="T2RXXXXG7S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT2RXXXXG8">
+					<xs:selector xpath="T2RXXXXG8"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT3RXXXXG1S">
+					<xs:selector xpath="T3RXXXXG1S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT3RXXXXG2S">
+					<xs:selector xpath="T3RXXXXG2S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT3RXXXXG3S">
+					<xs:selector xpath="T3RXXXXG3S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT4RXXXXG1S">
+					<xs:selector xpath="T4RXXXXG1S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT4RXXXXG2S">
+					<xs:selector xpath="T4RXXXXG2S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT4RXXXXG3S">
+					<xs:selector xpath="T4RXXXXG3S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT5RXXXXG1S">
+					<xs:selector xpath="T5RXXXXG1S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT5RXXXXG2S">
+					<xs:selector xpath="T5RXXXXG2S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT5RXXXXG3S">
+					<xs:selector xpath="T5RXXXXG3S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT6RXXXXG1S">
+					<xs:selector xpath="T6RXXXXG1S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT6RXXXXG2S">
+					<xs:selector xpath="T6RXXXXG2S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT6RXXXXG3S">
+					<xs:selector xpath="T6RXXXXG3S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT6RXXXXG4">
+					<xs:selector xpath="T6RXXXXG4"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT6RXXXXG5">
+					<xs:selector xpath="T6RXXXXG5"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT7RXXXXG1">
+					<xs:selector xpath="T7RXXXXG1"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT7RXXXXG2">
+					<xs:selector xpath="T7RXXXXG2"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT8RXXXXG1S">
+					<xs:selector xpath="T8RXXXXG1S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT8RXXXXG2S">
+					<xs:selector xpath="T8RXXXXG2S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT8RXXXXG3S">
+					<xs:selector xpath="T8RXXXXG3S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT9RXXXXG1S">
+					<xs:selector xpath="T9RXXXXG1S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT9RXXXXG2S">
+					<xs:selector xpath="T9RXXXXG2S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT9RXXXXG3S">
+					<xs:selector xpath="T9RXXXXG3S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT10RXXXXG1">
+					<xs:selector xpath="T10RXXXXG1"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT10RXXXXG2">
+					<xs:selector xpath="T10RXXXXG2"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT10RXXXXG3">
+					<xs:selector xpath="T10RXXXXG3"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT10RXXXXG4">
+					<xs:selector xpath="T10RXXXXG4"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT11RXXXXG1S">
+					<xs:selector xpath="T11RXXXXG1S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT11RXXXXG2S">
+					<xs:selector xpath="T11RXXXXG2S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT11RXXXXG3S">
+					<xs:selector xpath="T11RXXXXG3S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+				<xs:unique name="UT11RXXXXG4S">
+					<xs:selector xpath="T11RXXXXG4S"/>
+					<xs:field xpath="@ROWNUM"/>
+				</xs:unique>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DHead">
+		<xs:sequence>
+			<xs:element name="TIN" type="DGLong"/>
+			<xs:element name="C_DOC" type="xs:string" fixed="J01"/>
+			<xs:element name="C_DOC_SUB" type="xs:string" fixed="472"/>
+			<xs:element name="C_DOC_VER" type="xs:string" fixed="7"/>
+			<xs:element name="C_DOC_TYPE" type="xs:nonNegativeInteger"/>
+			<xs:element name="C_DOC_CNT" type="xs:nonNegativeInteger"/>
+			<xs:element name="C_REG" type="DGsti"/>
+			<xs:element name="C_RAJ" type="DGsti"/>
+			<xs:element name="PERIOD_MONTH" type="DGMonth"/>
+			<xs:element name="PERIOD_TYPE" type="DGPType"/>
+			<xs:element name="PERIOD_YEAR" type="DGYear"/>
+			<xs:element name="C_STI_ORIG" type="DGc_dpi"/>
+			<xs:element name="C_DOC_STAN" type="DGSTAN"/>
+			<xs:element name="LINKED_DOCS" nillable="true" minOccurs="0">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="DOC" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="C_DOC" type="DGC_DOC"/>
+									<xs:element name="C_DOC_SUB" type="DGC_DOC_SUB"/>
+									<xs:element name="C_DOC_VER" type="DGC_DOC_VER"/>
+									<xs:element name="C_DOC_TYPE" type="xs:nonNegativeInteger"/>
+									<xs:element name="C_DOC_CNT" type="xs:nonNegativeInteger"/>
+									<xs:element name="C_DOC_STAN" type="DGSTAN"/>
+									<xs:element name="FILENAME" type="DGFilename"/>
+								</xs:sequence>
+								<xs:attribute name="NUM" type="xs:nonNegativeInteger"/>
+								<xs:attribute name="TYPE" type="DGTypeLinkDoc"/>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+				<xs:unique name="UH_DOC_NUM">
+					<xs:selector xpath="DOC"/>
+					<xs:field xpath="@NUM"/>
+				</xs:unique>
+			</xs:element>
+			<xs:element name="D_FILL" type="DGDate"/>
+			<xs:element name="SOFTWARE" type="xs:string" nillable="true" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="DBody">
+		<xs:sequence>
+			<!--HEAD-->
+			<xs:element name="HNUM" type="xs:nonNegativeInteger"/>
+			<xs:element name="HZY" type="DGYear"/>
+			<xs:element name="HNAME" type="DGHNAME"/>
+			<xs:element name="HTIN" type="DGHTINJ"/>
+			<xs:element name="R00G1S" type="DGstring"/>
+			<xs:element name="R00G2" type="DGstring"/>
+			<xs:choice>
+				<xs:element name="HZ" type="DGchk"/>
+				<xs:element name="HZN" type="DGchk"/>
+				<xs:element name="HZU" type="DGchk"/>
+			</xs:choice>
+			<xs:choice>
+				<xs:element name="R01G1" type="DGchk" nillable="true" minOccurs="0"/>
+				<xs:element name="R01G2" type="DGchk" nillable="true" minOccurs="0"/>
+			</xs:choice>
+			<xs:element name="R01G3" type="DGdecimal2" nillable="true" minOccurs="0"/>
+			<xs:element name="R01G4" type="DGdecimal2" nillable="true" minOccurs="0"/>
+			<xs:element name="R01G5" type="DGdecimal2" nillable="true" minOccurs="0"/>
+			<!--TABLE №1-->
+			<xs:element name="T1RXXXXG1S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T1RXXXXG2S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T1RXXXXG3S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T1RXXXXG4" type="Decimal2Column" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №1-->
+			<xs:element name="R02G1S" type="xs:string" nillable="true" minOccurs="0"/>
+			<xs:element name="R02G2S" type="xs:string" nillable="true" minOccurs="0"/>
+			<xs:element name="R02G3S" type="xs:string" nillable="true" minOccurs="0"/>
+			<xs:element name="R02G4" type="DGdecimal2" nillable="true" minOccurs="0"/>
+			<xs:element name="R02G5" type="DGdecimal2" nillable="true" minOccurs="0"/>
+			<xs:element name="R02G6" type="DGdecimal2" nillable="true" minOccurs="0"/>
+			<xs:element name="R02G7" type="DGdecimal2" nillable="true" minOccurs="0"/>
+			<xs:element name="R02G8" type="DGdecimal2" nillable="true" minOccurs="0"/>
+			<xs:element name="R02G9" type="DGdecimal2" nillable="true" minOccurs="0"/>
+			<!--TABLE №2-->
+			<xs:element name="T2RXXXXG1S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T2RXXXXG2S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T2RXXXXG3S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T2RXXXXG4" type="Decimal2Column" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T2RXXXXG5S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T2RXXXXG6S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T2RXXXXG7S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T2RXXXXG8" type="Decimal2Column" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №2-->
+			<!--TABLE №3-->
+			<xs:element name="T3RXXXXG1S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T3RXXXXG2S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T3RXXXXG3S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №3-->
+			<!--TABLE №4-->
+			<xs:element name="T4RXXXXG1S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T4RXXXXG2S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T4RXXXXG3S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №4-->
+			<!--TABLE №5-->
+			<xs:element name="T5RXXXXG1S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T5RXXXXG2S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T5RXXXXG3S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №5-->
+			<!--TABLE №6-->
+			<xs:element name="T6RXXXXG1S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T6RXXXXG2S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T6RXXXXG3S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T6RXXXXG4" type="ChkColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T6RXXXXG5" type="ChkColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №6-->
+			<!--TABLE №7-->
+			<xs:element name="T7RXXXXG1" type="ChkColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T7RXXXXG2" type="ChkColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №7-->
+			<!--TABLE №8-->
+			<xs:element name="T8RXXXXG1S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T8RXXXXG2S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T8RXXXXG3S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №8-->
+			<!--TABLE №9-->
+			<xs:element name="T9RXXXXG1S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T9RXXXXG2S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T9RXXXXG3S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №9-->
+			<!--TABLE №10-->
+			<xs:element name="T10RXXXXG1" type="Decimal2Column" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T10RXXXXG2" type="Decimal2Column" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T10RXXXXG3" type="ChkColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T10RXXXXG4" type="ChkColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №10-->
+			<!--TABLE №11-->
+			<xs:element name="T11RXXXXG1S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T11RXXXXG2S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T11RXXXXG3S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<xs:element name="T11RXXXXG4S" type="StrColumn" nillable="true" minOccurs="0" maxOccurs="9999"/>
+			<!--/TABLE №11-->
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
+<!--Розробник: відділ проектування та розробки АІС ГУ ДПС у Черкаській області-->
